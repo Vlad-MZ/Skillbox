@@ -1,6 +1,12 @@
 # Compiled class file
 *.class
 
+# files IntelliJ IDEA
+.idea/
+out/
+*.iml
+
+
 # Log file
 *.log
 
@@ -11,7 +17,7 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
+# *.jar
 *.war
 *.nar
 *.ear
