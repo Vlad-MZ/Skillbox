@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class Main {
     // "<ACCESS TOKEN>";
-    private static final String ACCESS_TOKEN = "FP1aP2Q8-Q4AAAAAAAAAARFLKiRU6GzmC5vX5SA4PnWE93BdT6e-Gsvfhm6vwhgx";
+    private static final String ACCESS_TOKEN = <ACCESS_TOKEN>;      // put it here...
 
     public static void main(String args[]) throws DbxException, IOException {
         // Create Dropbox client
@@ -43,8 +43,8 @@ public class Main {
         }
 
         // Upload our file  to Dropbox:
-        //      "C:/Users/User/IdeaProjects/Skillbox/Java_haker/Day_1/GetScreenshot/myScreenshot.png"
-        String fname = "C:/Users/User/IdeaProjects/Skillbox/Java_haker/Day_1/GetScreenshot/myScreenshot.png";
+        //      "Skillbox/Java_haker/Day_1/GetScreenshot/myScreenshot.png"
+        String fname = "Skillbox/Java_haker/Day_1/GetScreenshot/myScreenshot.png";
         try (InputStream in = new FileInputStream(fname)) {
             FileMetadata metadata = client.files().uploadBuilder("/myScreenshot.png")
                     .uploadAndFinish(in);
